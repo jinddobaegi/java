@@ -1,10 +1,10 @@
-package hello.hello_spring;
+package jinyeong.my_pjt;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class HelloSpringApplicationTests {
+class MyPjtApplicationTests {
 
 	@Test
 	void contextLoads() {
