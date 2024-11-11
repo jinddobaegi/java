@@ -1,9 +1,11 @@
 package jinyeong.my_pjt.repository;
 
 import jinyeong.my_pjt.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+//@Repository
 public class MemoryMemberRepository implements MemberRepository {
 
     private static Map<Long, Member> store = new HashMap<>();  // 회원 정보 저장용

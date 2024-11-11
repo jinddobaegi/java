@@ -2,10 +2,14 @@ package jinyeong.my_pjt.service;
 
 import jinyeong.my_pjt.domain.Member;
 import jinyeong.my_pjt.repository.MemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+// 클래스 클릭하고 ctrl+shift+T: 테스트 코드 생성
+//@Service  // 스프링 컨테이너가 스프링 빈으로 인식하도록 함
 public class MemberService {
 
     // final은 변경 불가능하게 만듦
@@ -13,6 +17,7 @@ public class MemberService {
 //    private final MemberRepository memberRepository = new MemoryMemberRepository();
     private final MemberRepository memberRepository;
 
+//    @Autowired
     // DI(Dependency Injection, 의존성 주입): 외부에서 생성자를 통해 인스턴스 주입
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
